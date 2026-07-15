@@ -146,6 +146,36 @@
         .order-card button:hover {
             background: #ff6f61;
         }
+        .menu-showcase {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            align-items: center;
+        }
+        .menu-showcase img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+        }
+        .menu-details {
+            background: #fff8f0;
+            border: 1px solid #ffdbc8;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        .menu-details h3 {
+            margin: 0 0 10px;
+            color: #d84315;
+        }
+        .menu-details p {
+            margin: 10px 0;
+            color: #5d4037;
+        }
+        .menu-details .price {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #bf360c;
+        }
         mark {
             background-color: #fff9c4;
             padding: 0 5px;
@@ -195,6 +225,18 @@
                 <li>サガ（Saag） - NPR 200</li>
                 <li>ダル（Dal） - NPR 220</li>
             </ul>
+        </section>
+        <section>
+            <h2>今週のおすすめ</h2>
+            <div class="menu-showcase">
+                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1000&q=80" alt="ネパール料理の特製セット">
+                <div class="menu-details">
+                    <h3>ダルバート & モモ セット</h3>
+                    <p>当店の人気メニュー、ダルバートとモモを一緒に楽しめる特別セット。バランスの良いスパイスと本場の味わいが自慢です。</p>
+                    <p class="price">価格: NPR 450</p>
+                    <p>このセットには、ダル、ライス、野菜、ピクルス、そしてジューシーなモモが含まれています。食べ応えのある一品です。</p>
+                </div>
+            </div>
         </section>
         <section>
             <h2>オンライン注文</h2>
