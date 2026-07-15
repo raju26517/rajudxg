@@ -107,6 +107,45 @@
             border: 0;
             display: block;
         }
+        .order-card {
+            background: #fff3e0;
+            border: 1px solid #ffccbc;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .order-card label {
+            display: block;
+            margin: 12px 0 6px;
+            color: #5d4037;
+            font-weight: 600;
+        }
+        .order-card input,
+        .order-card textarea,
+        .order-card select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ffd0b3;
+            border-radius: 10px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        .order-card textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .order-card button {
+            margin-top: 15px;
+            background: #ff8a80;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .order-card button:hover {
+            background: #ff6f61;
+        }
         mark {
             background-color: #fff9c4;
             padding: 0 5px;
@@ -151,6 +190,31 @@
                 <li>サガ（Saag） - NPR 200</li>
                 <li>ダル（Dal） - NPR 220</li>
             </ul>
+        </section>
+        <section>
+            <h2>オンライン注文</h2>
+            <div class="order-card">
+                <p>下記フォームから注文を送信できます。実際の注文処理はサンプル形式です。</p>
+                <label for="customer-name">お名前</label>
+                <input type="text" id="customer-name" name="customer-name" placeholder="お名前を入力してください">
+
+                <label for="customer-phone">電話番号</label>
+                <input type="tel" id="customer-phone" name="customer-phone" placeholder="080-xxxx-xxxx">
+
+                <label for="order-item">注文内容</label>
+                <select id="order-item" name="order-item">
+                    <option value="dalbhat">ダルバート - NPR 350</option>
+                    <option value="momo">モモ - NPR 250</option>
+                    <option value="sekuwa">セクワ - NPR 300</option>
+                    <option value="alootama">アルタマ - NPR 240</option>
+                    <option value="chatamari">チャットパテ - NPR 260</option>
+                </select>
+
+                <label for="order-notes">備考</label>
+                <textarea id="order-notes" name="order-notes" placeholder="数量や特記事項を入力してください"></textarea>
+
+                <button type="button">注文を送信</button>
+            </div>
         </section>
         <article>
             <header>
