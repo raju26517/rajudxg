@@ -151,9 +151,13 @@
             grid-template-columns: 1fr;
             gap: 20px;
             align-items: center;
+            max-width: 640px;
+            margin: 0 auto;
         }
         .menu-showcase img {
             width: 100%;
+            max-width: 360px;
+            margin: 0 auto;
             border-radius: 20px;
             box-shadow: 0 8px 18px rgba(0,0,0,0.15);
         }
@@ -162,6 +166,26 @@
             border: 1px solid #ffdbc8;
             border-radius: 20px;
             padding: 20px;
+        }
+        .menu-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu-list li {
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ffe0cc;
+        }
+        .menu-list .menu-badge {
+            display: inline-block;
+            margin-top: 6px;
+            background: #ffebee;
+            color: #bf360c;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 700;
         }
         .menu-details h3 {
             margin: 0 0 10px;
@@ -213,17 +237,47 @@
         <section>
             <h2>メニュー（NPR 200〜500）</h2>
             <p>以下はNPR 200から500のネパール料理メニューです。</p>
-            <ul>
-                <li>ダルバート（Dal Bhat） - NPR 350</li>
-                <li>モモ（Momo） - NPR 250</li>
-                <li>セクワ（Sekuwa） - NPR 300</li>
-                <li>アルタマ（Aloo Tama） - NPR 240</li>
-                <li>チャットパテ（Chatamari） - NPR 260</li>
-                <li>グンドゥルック（Gundruk） - NPR 230</li>
-                <li>サデコ（Sukuti） - NPR 280</li>
-                <li>ティッカ（Tikka） - NPR 320</li>
-                <li>サガ（Saag） - NPR 200</li>
-                <li>ダル（Dal） - NPR 220</li>
+            <ul class="menu-list">
+                <li>
+                    ダルバート（Dal Bhat）
+                    <span class="menu-badge">おすすめ</span>
+                </li>
+                <li>
+                    モモ（Momo）
+                    <span class="menu-badge">人気</span>
+                </li>
+                <li>
+                    セクワ（Sekuwa）
+                    <span class="menu-badge">スパイシー</span>
+                </li>
+                <li>
+                    アルタマ（Aloo Tama）
+                    <span class="menu-badge">伝統料理</span>
+                </li>
+                <li>
+                    チャットパテ（Chatamari）
+                    <span class="menu-badge">軽食</span>
+                </li>
+                <li>
+                    グンドゥルック（Gundruk）
+                    <span class="menu-badge">ヘルシー</span>
+                </li>
+                <li>
+                    サデコ（Sukuti）
+                    <span class="menu-badge">辛口</span>
+                </li>
+                <li>
+                    ティッカ（Tikka）
+                    <span class="menu-badge">グリル</span>
+                </li>
+                <li>
+                    サガ（Saag）
+                    <span class="menu-badge">野菜料理</span>
+                </li>
+                <li>
+                    ダル（Dal）
+                    <span class="menu-badge">定番</span>
+                </li>
             </ul>
         </section>
         <section>
